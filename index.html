@@ -1,91 +1,272 @@
-Letar du efter en nybörjardansklass där du kommer ut bubblande och sprudlande av glädje?
+<!DOCTYPE html>
+<html lang="sv">
 
-En plats där du kan få en härlig workout och lära dig dansa på samma gång i en avslappnad och energigivande miljö?
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dansakuten - Nybörjardansklass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            max-width: 700px;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'afrah', sans-serif;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+            font-weight: 500;
+        }
 
-Där du blir sedd och är en del av gruppen, och inte behöver oroa dig för att känna dig ensam i rummet och lite fel?
+        img {
+            display: block;
+        }
 
-—----------------------------
 
-Jag startade Dansakuten till dig som behöver börja dansa, här och nu!
 
-Därför att jag pratat med så många som vill dansa men inte hittar en dansklass de känner sig sugna på. Som letat efter
-den där perfekta dansklassen (som aldrig kommer), där det känns helt ok att komma precis som de vi är.
+        @font-face {
+            font-family: 'Aegean';
+            src: url('TAN-AEGEAN-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-Dansakuten är till dig vars ben helt enkelt spritter för mycket för att sitta stilla på jobbet dag in och dag ut. Till
-dig som behöver ett skuttande utlopp för kropp, själ och hjärta.
+        @font-face {
+            font-family: 'afrah';
+            src: url('afrah-regular.otf') format('truetype');
+        }
 
-Till dig som vill börja på ruta 1 och bli visad en rörelse i taget, tills du känner dig så säker och trygg att det blir
-roligt att dansa (inte ångestladdat). Som vill komma ut svettig och varm, med en känsla av frihet i kroppen.
 
-—-----
+        h1 {
+            font-family: 'Aegean', sans-serif;
+            font-size: 50px;
+            text-align: center;
+            margin: 60px 0px;
+        }
 
-Hej, det är jag som är Leila! Idén till Dansakuten började gro medan jag jobbade på Närakuten som läkare, och fastnade i
-konversationer med var och varannan kollega som alla längtade efter att dansa.
+        .wavy-svg {
+            display: block;
+            margin: 40px auto;
+            transform: rotate(-5deg);
+        }
 
-Fem år tidigare sa jag upp mig som ST-läkare på hudkliniken i Tyskland för att gå en heltidsdansutbildning på Lunnevads
-folkhögskola. Det var det viktigaste beslutet jag någonsin tagit!
+        .wavy-svg text {
+            font-size: 60px;
+            font-family: 'Aegean', sans-serif;
+        }
 
-Min kropp har aldrig varit så lycklig som när jag fick dansa varje dag, tillsammans med människor som älskade dans lika
-mycket som jag.
+        /* Ensure the SVG is responsive */
+        @media (max-width: 600px) {
+            .wavy-svg {
+                width: 100%;
+                height: auto;
+            }
+        }
 
-Jag sökte därför till yrkesdansarutbildningen på Balettakademien (som 29 åring…) där jag till min förvåning blev
-antagen, tillsammans med 27 andra dansare (med en medelålder på 19,5 ..).
+        .container {
+            width: 700px;
+        }
 
-Även om jag uppskattade att få känna mig ung, så var det något som inte stämde för mig. Dansglädjen hade ersatts med
-prestationskrav, jämförelse och att efterlikna det perfekta proffsdansar-idealet.
+        .white,
+        .black {
+            padding: 60px;
+        }
 
-Danssalen kändes trång, och det var som att vi alla slogs om att vara dem som blev “utvalda” av läraren att dansa
-koreografin i slutet av klassen – snarare än att vi dansade tillsammans.
+        .white {}
 
-Samma upplevelse hade jag på de otaliga kvällsklasser jag gick till i Stockholm – många av dansarna jag pratade med
-mådde dåligt och tvivlade på sig själva (trots att de dansade fantastiskt vackert!), och längtade efter att få stöd,
-uppmuntran och personlig feedback.
+        .black {
+            color: white;
+            background: rgb(0, 0, 0);
+        }
+    </style>
+</head>
 
-Jag tog det svåra beslutet att hoppa av Balettakademien, för att gå min egen väg. Det var här, efter att ha upplevt
-dansvärldens toppar och dalar, som planerna om min drömdansklass och Dansakuten började ta form.
+<body>
+    <header>
+        <svg class="wavy-svg" width="500" height="150" viewBox="0 0 400 150">
+            <!-- Gentler wave with less extreme highs and lows -->
+            <path id="curve" d="M0,80 Q50,65 100,80 Q150,95 200,80 Q250,65 300,80 Q350,95 400,80" fill="transparent" />
+            <!-- Kept the dy attribute to prevent text from being cut off -->
+            <text class="aegean-font" dy="15" text-anchor="middle">
+                <textPath href="#curve" startOffset="50%">Dansakuten</textPath>
+            </text>
+        </svg>
 
-—-----------
+    </header>
+    <div class="container">
+        <img style="width: 60%; margin: 0 auto;" src="/images/snake.jpg">
 
-Denna nybörjarklass är startskottet för Dansakuten©. Jag har alltid älskat att undervisa nybörjare, för att alla brukar
-bli så stolta och glada över hur mycket det går att lära sig på kort tid!
+        <div class="white" style="font-size: 1.3em; line-height: 1.6em;">
+            <p>Letar du efter en nybörjardansklass där du kommer ut bubblande
+                och
+                sprudlande av glädje?
+            </p>
 
-Och för att det är något härligt i känslan att vi alla provar på något nytt tillsammans – det gör det lättare att
-fokusera på att ha roligt, snarare än att vi ska vara “bra”.
+            <p>Att få dansa i en
+                avslappnad
+                och
+                energigivande grupp, utan prestationskrav, med en skön workout på köpet?</p>
 
-Jag vill att den här klassen ska ge dig just det, en dansgrund att stå på, som gör dig modigare, där du lär dig lita på
-din kropp, och hitta in till hur du kan släppa loss och ge dig hän till koreografin.
+            <p style="display: none;">Där du blir sedd och känner dig som en del, utan att oroa dig för att känna dig
+                ensam i rummet
+                och lite fel?</p>
 
-Vad är det för sorts dans?
+        </div>
+        <div class="black" style="font-size: 1.3em; line-height: 1.6em;">
 
-På Dansakuten har vi inga speciella “stil-bundna” klasser. Själv har jag dansat modernt, jazz, hiphop, commercial och
-balett. Till klasserna kommer jag välja element och idéer från alla möjliga stilar, och göra koreografier som passar er
-(jag ska erkänna att jag dels startat Dansakuten för att ha en ursäkt att koreografera själv.. 😎) .
+            <p>Jag startade <span class=" highlight">Dansakuten</span> till
+                dig som
+                <i>behöver</i> börja dansa. Här och
+                nu!
+            </p>
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Reduced number of waves with rounded corners -->
+                <path d="M50,100 
+                     Q100,25 150,100 
+                     Q200,175 250,100 
+                     Q300,25 350,100 
+                     Q400,175 450,100 
+                     Q500,25 550,100 
+                     Q600,175 650,100 
+                     Q700,25 750,100" fill="none" stroke="#fefefe" stroke-width="8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
 
-Dessa klasser är alltså till dig som är helt nybörjare, du behöver inte ha tagit en enda dansklass i hela ditt liv (om
-du har tagit dansklasser förut är du såklart välkommen ändå).
+            <p>Därför att jag pratat med så många som <i>vill dansa</i> men inte hittar en dansklass de känner sig sugna
+                på.
+                Som letat efter den där perfekta dansklassen (som aldrig kommer...) där det känns <strong> helt ok att
+                    komma
+                    precis
+                    som de vi är.</strong></p>
 
-För att säkerställa att undervisningen blir så personligt anpassad som möjligt och alla får den hjälp de behöver kommer
-det finnas plats för max. 5 deltagare per klass.
+            <p><span class="highlight">Dansakuten</span> är till dig vars ben helt enkelt spritter för mycket för att
+                sitta stilla på jobbet dag in och dag ut...</p>
 
-Vi kommer ses 5 måndagar kl 18.30 under maj - juni 2025, 75 minuter per klass:
+            <p>Till dig som behöver ett <i>skuttande</i> utlopp för kropp, själ och
+                hjärta.</p>
 
-5/5
-12/5
-19/5
-26/5
-2/6
+            <p>Till dig som vill börja på ruta ett och bli visad en rörelse i taget, tills du känner dig så säker och
+                trygg att det blir roligt att dansa (inte ångestladdat!). </p>
 
-Ålder: 18-180 år
+            <p>Som vill komma hem svettig och varm, med en
+                känsla av frihet i kroppen.</p>
+        </div>
+        <div class="white" style="font-size: 1.3em; line-height: 1.6em;">
+            <img src="images/leila.jpeg" style="width: 100%; margin: 0 auto;">
+            <p>Hej, det är jag som är Leila! </p>
 
-Klasserna äger rum i Matilda Flebergs studio på Södermalm, nära Mariatorget.
+            <p>Idén till Dansakuten började gro medan jag jobbade på Närakuten som
+                läkare, och fastnade i konversationer med var och varannan kollega som alla längtade efter att
+                dansa.</p>
 
-För att fira att detta är Dansakutens premiärkurs är priset 30% rabatterat:
+            <p>Fem år tidigare sa jag upp mig som ST-läkare på hudkliniken i Tyskland för att gå en
+                heltidsdansutbildning på <a href="https://www.lunnevad.se/utbildningar/dans/danslinjen-dans/">Lunnevads
+                    folkhögskola</a>.</p>
 
-Kostnaden för alla 5 tillfällen är därför endast 1 395 SEK 975 kr.
+            <p>Det var det galnaste, men viktigaste beslutet jag någonsin
+                tagit!</p>
 
-Anmäl dig till kursen här
+            <p>Min kropp har aldrig varit så lycklig som när jag fick <strong>dansa varje dag, tillsammans med människor
+                    som älskade dans lika mycket som jag</strong>.</p>
 
-P.S. Om ni har en favvolåt ni vill dansa till kan ni skriva den i anmälningsformuläret.
+        </div>
+        <div class="black" style="font-size: 1.3em; line-height: 1.6em;">
 
-P.P.S. Om ni är taggade på att vara med men inte kan dessa tillfällen – skriv upp er på Dansakutens maillista här så
-säger jag till när nästa kurs börjar.
+            <p>Jag sökte därför till <a style="color: white;"
+                    href="https://www.folkuniversitetet.se/vara-skolor/balettakademien-dansstudion/balettakademien-stockholm/utbildningar/yrkesdansarutbildningen/">yrkesdansarutbildningen
+                    på Balettakademien</a>, som 29 åring, där jag till min
+                förvåning blev antagen, tillsammans med 27 andra dansare med en medelålder på 19,5...</p>
+
+            <p><i>Även om jag uppskattade att få känna mig ung, så var det något som inte stämde för mig</i>.</p>
+            <p>
+                Dansglädjen hade ersatts med en stämning av prestationskrav, jämförelse och att efterlikna ett perfekt
+                proffsdansar-ideal...</p>
+
+            <p>Salen kändes trång, det var som att vi alla slogs om att vara dem som blev "utvalda" av
+                läraren att dansa koreografin i slutet av klassen – snarare än att vi dansade tillsammans!</p>
+
+            <p>Samma upplevelse hade jag på de otaliga kvällsklasser jag gick till i Stockholm.</p>
+            <p>Många av
+                dansarna jag pratade med mådde dåligt och tvivlade på sig själva (trots att de dansade
+                fantastiskt vackert!), och längtade efter att få stöd, uppmuntran och personlig feedback.</p>
+
+            <p>Jag tog det svåra beslutet att hoppa av Balettakademien, för att gå min egen väg. </p>
+            <p>
+                Det var här,
+                efter att ha upplevt dansvärldens toppar och dalar, som planerna om min drömdansklass och <span
+                    class="highlight">Dansakuten</span> började ta form.</p>
+        </div>
+        <div class="white" style="font-size: 1.3em; line-height: 1.6em;">
+            <p>Min nybörjarklass är startskottet för Dansakuten 🙌💪</p>
+            <p>
+                Jag har alltid älskat att undervisa nybörjare, eftersom alla blir så stolta och glada över hur
+                mycket det går att lära sig på kort tid!</p>
+
+            <p>För att det är något härligt i känslan att vi alla provar på något nytt tillsammans – det är
+                lättare att fokusera på att ha roligt, snarare än att vi ska dansa "bra".</p>
+
+            <p>Jag vill att den här klassen ska ge dig just det, en glädjefylld dansgrund att stå på, som ger dig
+                <i>mod</i>.
+            </p>
+            <p>
+                Där du
+                lär dig lita på din kropp, och hitta in till hur du kan släppa loss, slappna av och ge dig hän till
+                musiken.
+            </p>
+        </div>
+        <div class="black" style="font-size: 1.3em; line-height: 1.6em;">
+            <p>Vad är det för sorts dans, kanske du undrar?</p>
+            <p>På Dansakuten har vi inga speciella "stil-bundna" klasser, jag har själv bakgrund med modern dans,
+                jazz, hiphop, commercial och balett. </p>
+            <p>
+                Till klasserna kommer jag välja element och idéer från
+                alla möjliga stilar, och göra koreografier som passar gruppen.</p>
+
+            <p>Dessa klasser är till dig som är helt nybörjare. Du behöver inte ha tagit en enda dansklass i
+                hela ditt liv (men om du har tagit dansklasser förut är du såklart välkommen ändå).</p>
+
+        </div>
+        <div class="white" style="font-size: 1.3em; line-height: 1.6em;">
+
+            <p>För att säkerställa att undervisningen blir så personligt anpassad som möjligt och alla får
+                den hjälp de behöver kommer det finnas plats för max. 5 deltagare per klass.</p>
+
+            <p>Ålder: 18-180 år</p>
+
+            <p>Vi kommer ses 5 måndagar kl 18.30 under maj - juni 2025, 75 minuter per klass:</p>
+            <ul>
+                <li>5/5</li>
+                <li>12/5</li>
+                <li>19/5</li>
+                <li>26/5</li>
+                <li>2/6</li>
+            </ul>
+
+
+            <p>Klasserna äger rum i Matilda Flebergs studio på Södermalm, nära Mariatorget.</p>
+
+            <p>För att fira att detta är Dansakutens premiärkurs (jippi!!) är priset 30% rabatterat:</p>
+
+            <p class="original-price"><s>1 395 SEK</s> 975 SEK</p>
+
+            <a href="#" class="button">Anmäl dig till kursen här</a>
+
+            <p style="margin-top: 2rem;">P.S. Om ni har en favvolåt ni vill dansa till kan ni skriva den i
+                anmälningsformuläret.</p>
+
+            <p>P.P.S. Om ni är taggade på att vara med men inte kan dessa tillfällen – <a href="#"
+                    style="color: var(--accent-color);">skriv upp er på Dansakutens maillista här</a> så säger jag till
+                när nästa kurs börjar.</p>
+
+            <p>Kram,</p>
+
+            Leila Skorupa<br>
+
+        </div>
+
+</body>
+
+</html>
