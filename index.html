@@ -17,6 +17,10 @@
             font-family: 'afrah', sans-serif;
             letter-spacing: 1px;
             line-height: 1.5em;
+
+        }
+
+        .ios-device body {
             -webkit-font-smoothing: none;
         }
 
@@ -116,13 +120,21 @@
 
         }
     </style>
+    <script>
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+        // Add class if iOS
+        if (isIOS) {
+            document.documentElement.classList.add('ios-device');
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <svg class="wavy-svg" width="500" height="150" viewBox="0 0 400 150">
             <!-- Gentler wave with less extreme highs and lows -->
-            <path id="curve" d="M0,80 Q50,65 100,80 Q150,95 200,80 Q250,65 300,80 Q350,95 400,80" fill="transparent" />
+            <path id="curve" d="M0,80 Q50,65 100,80 Q150,95 200,80 Q250,65 300,80 Q350,95 400,90" fill="transparent" />
             <!-- Kept the dy attribute to prevent text from being cut off -->
             <text class="aegean-font" dy="15" text-anchor="middle">
                 <textPath href="#curve" startOffset="50%">Dansakuten</textPath>
@@ -172,12 +184,20 @@
             <p>Därför att jag pratat med så många som <i>vill dansa</i> men inte hittar en dansklass de känner sig sugna
                 på.</p>
             <p>
-                Som letat efter den där perfekta dansklassen (som aldrig kommer...) där det känns <strong> helt ok att
-                    komma
-                    precis
-                    som de vi är.</strong></p>
+                Som letat efter den där perfekta dansklassen (som aldrig kommer...) där det känns helt ok att
+                komma
+                precis
+                som de vi är.</p>
             <br>
-            <hr>
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Reduced number of waves with rounded corners -->
+                <path d="M50,100 
+                     Q100,25 150,100 
+                     Q300,25 350,100 
+                     Q400,175 450,100 
+                     Q600,175 850,100" fill="none" stroke="#fefefe" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
             <br>
 
             <p><span class="highlight">Dansakuten</span> är till dig vars ben helt enkelt spritter för mycket för att
@@ -207,8 +227,8 @@
             <p>Det var det galnaste, men viktigaste beslutet jag någonsin
                 tagit!</p>
 
-            <p>Min kropp har aldrig varit så lycklig som när jag fick <strong>dansa varje dag, tillsammans med människor
-                    som älskade dans lika mycket som jag</strong>.</p>
+            <p>Min kropp har aldrig varit så lycklig som när jag fick dansa varje dag, tillsammans med människor
+                som älskade dans lika mycket som jag.</p>
 
         </div>
         <div id="water" class="black" style="font-size: 1.3em; line-height: 1.6em;">
@@ -237,13 +257,12 @@
             <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
                 <!-- Reduced number of waves with rounded corners -->
                 <path d="M50,100 
-                     Q100,25 150,100 
-                     Q200,175 250,100 
+                     Q100,5 10,100 
+                     Q200,175 200,100 
                      Q300,25 350,100 
-                     Q400,175 450,100 
-                     Q500,25 550,100 
+                     Q500,25 580,100 
                      Q600,175 650,100 
-                     Q700,25 750,100" fill="none" stroke="#fefefe" stroke-width="8" stroke-linecap="round"
+                     Q700,25 750,110" fill="none" stroke="#fefefe" stroke-width="4" stroke-linecap="round"
                     stroke-linejoin="round" />
                 <p>
                     Det var här,
@@ -268,6 +287,18 @@
                 lär dig lita på din kropp, hitta in till hur du kan släppa tyglarna, och känna dig som en fisk i vatten
                 med din dans.
             </p>
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Reduced number of waves with rounded corners -->
+                <path d="M50,100 
+                     Q100,25 150,100 
+                     Q200,175 250,100 
+                     Q300,25 350,100 
+                     Q400,175 450,100 
+                     Q500,25 550,100 
+                     Q600,175 650,100 
+                     Q700,25 750,100" fill="none" stroke="#000000" stroke-width="8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
         </div>
         <div class="black" style="font-size: 1.3em; line-height: 1.6em;">
             <p style="display: none;">Vad är det för sorts dans, kanske du undrar?</p>
@@ -320,7 +351,14 @@
             <p>Leila Skorupa<br>
                 <a href="mailto:leila2@live.at">leila2@live.at</a>
             </p>
-
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Reduced number of waves with rounded corners -->
+                <path d="M50,100 
+                     Q200,175 250,100 
+                     Q400,175 450,100 
+                     Q500,25 550,100 
+" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         </div>
 
 </body>
