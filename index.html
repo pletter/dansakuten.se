@@ -17,11 +17,8 @@
             font-family: 'afrah', sans-serif;
             letter-spacing: 1px;
             line-height: 1.5em;
+            -webkit-font-smoothing: antialiased;
 
-        }
-
-        .ios-device body {
-            -webkit-font-smoothing: none;
         }
 
         img {
@@ -120,14 +117,7 @@
 
         }
     </style>
-    <script>
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-        // Add class if iOS
-        if (isIOS) {
-            document.documentElement.classList.add('ios-device');
-        }
-    </script>
 </head>
 
 <body>
